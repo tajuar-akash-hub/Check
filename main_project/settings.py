@@ -17,7 +17,8 @@ SECRET_KEY = 'django-insecure-sj$_yd2786&#4+4g0sexq2!+-6uqwh_x02s@hqkw$p#2qg@vov
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://book-heaven-bd-plus.onrender.com','https://*.127.0.0.1']
 
 
 # Application definition
