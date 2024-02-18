@@ -30,10 +30,13 @@ ml-dtypes
 MouseInfo
 mss
 mysql-connector-python
+numpy
 oauthlib
 openpyxl
 opt-einsum
 packaging
+panda
+pandas
 Pillow
 pipenv
 platformdirs
@@ -57,6 +60,10 @@ six
 sqlparse
 tensorboard
 tensorboard-data-server
+tensorflow
+tensorflow-estimator
+tensorflow-intel
+tensorflow-io-gcs-filesystem
 termcolor
 typing_extensions
 tzdata
