@@ -34,8 +34,6 @@ oauthlib
 openpyxl
 opt-einsum
 packaging
-
-
 Pillow
 pipenv
 platformdirs
