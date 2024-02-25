@@ -23,10 +23,7 @@ def send_transaction_email(user, amount, subject, template):
 
 # email send setup ends here ---------------------------------
 
-# Create your views here.
-# def tran_demo(request):
-#     form = transaction_form()
-#     return render(request,"transactions_form.html",{'form':Deposite_form})
+
 
 class transactionCreateMixin(LoginRequiredMixin,CreateView):
     template_name='transactions_form.html'
@@ -48,6 +45,7 @@ class depositeMoneyView(transactionCreateMixin):
     form_class = Deposite_form
 
     def form_valid(self, form):
+        
         # amount = form.cleaned_date.get("amount")
         amount = form.cleaned_data.get("amount")
         account = self.request.user.account

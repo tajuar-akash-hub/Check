@@ -31,6 +31,7 @@ def purchased_view(request,id):
     purchase_instance.Book=filtered_book_model
     purchase_instance.purchased_book_name=filtered_book_model.title
     purchase_instance.purchased_book_price=filtered_book_model.borrowing_price
+    
     purchase_instance.balance_after_purchased=(request.user.account.balance) - (filtered_book_model.borrowing_price)
      
     purchase_instance.save()
